@@ -1,0 +1,8 @@
+<h2>Daily Purchase Report</h2>
+
+<% @report_data[:purchases].each do |product_data| %>
+  <h3><%= product_data[:product_name] %></h3>
+  <p>Total Purchases: <%= product_data[:total_purchases] %></p>
+  <p>Total Amount: <%= product_data[:total_amount] %></p>
+  <hr>
+<% end %>

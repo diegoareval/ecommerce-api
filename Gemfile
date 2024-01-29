@@ -3,33 +3,32 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.5'
+ruby '1.9.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 6.1.7'
+gem 'rails', '3.2.22.5'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+gem 'pg', '~> 0.18'
 # Use Puma as the app server
-gem 'devise'
-gem 'puma', '~> 5.0'
-gem 'rubocop', require: false
-gem 'sidekiq'
+gem 'devise', '~> 3.5'
+gem 'puma', '~> 2.16'
+gem 'rubocop', '~> 0.92', require: false
+gem 'sidekiq', '~> 4.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
+# gem 'redis', '~> 3.3'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-gem 'whenever', require: false
-gem 'swagger-blocks'
-gem 'swagger-docs'
-
+gem 'whenever', '~> 0.10', require: false
+gem 'swagger-blocks', '~> 2.0'
+gem 'swagger-docs', '~> 1.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.4', require: false
+gem 'bootsnap', '1.4.4', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
